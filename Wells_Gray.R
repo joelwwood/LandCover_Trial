@@ -28,6 +28,8 @@ download.file("http://ftp.maps.canada.ca/pub/nrcan_rncan/Land-cover_Couverture-d
 land_cover <- raster(unzip(temp)[1])
 unlink(temp)
 
+#to save land_cover as  in your project's directory use the code on the next line
+#writeRaster(land_cover, filename="Data/CAN_LC_2015_CAL.tif",datatype = "INT2U") 
 #code to load it locally
 #land_cover <- raster("Data/CAN_LC_2015_CAL.tif")
 
